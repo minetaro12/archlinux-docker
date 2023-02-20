@@ -28,7 +28,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: ./base
-          file: Dockerfile
+          file: ./base/Dockerfile
           platforms: linux/amd64
           push: true
           tags: |
@@ -56,7 +56,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: ./dev
-          file: Dockerfile
+          file: ./dev/Dockerfile
           platforms: linux/amd64
           push: true
           tags: |
